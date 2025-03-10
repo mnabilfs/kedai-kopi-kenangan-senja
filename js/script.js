@@ -64,3 +64,5 @@ window.onclick = (e) => {
     itemDetailModal.style.display = 'none';
   }
 };
+
+console.log("test");
