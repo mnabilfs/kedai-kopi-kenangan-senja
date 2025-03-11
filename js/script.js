@@ -65,4 +65,3 @@ window.onclick = (e) => {
   }
 };
 
-console.log("test");
