@@ -241,6 +241,11 @@ body {
   cursor: pointer;
 }
 
+.form-container .checkout-button.disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -412,7 +417,7 @@ body {
 /* Products Section */
 .products .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
   margin-top: 4rem;
 }
@@ -451,7 +456,7 @@ body {
 }
 
 .products .product-image img {
-  height: 25rem;
+  height: 20rem;
 }
 
 .products .product-content h3 {
