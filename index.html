@@ -23,9 +23,8 @@
   <script src="src/app.js" async></script>
 
   <!-- Midtrans -->
-  <script type="text/javascript"
-  src="https://app.sandbox.midtrans.com/snap/snap.js"
-  data-client-key="SB-Mid-client-8l3bJ9A56V2dXbv-"></script>
+  <script type="text/javascript" src="https://app.sandbox.midtrans.com/snap/snap.js"
+    data-client-key="SB-Mid-client-8l3bJ9A56V2dXbv-"></script>
 
   <!-- My Style -->
   <link rel="stylesheet" href="css/style.css">
@@ -76,11 +75,11 @@
               <span x-text="rupiah(item.total)"></span>
             </div>
           </div>
-        </div> 
+        </div>
       </template>
       <h4 x-show="!$store.cart.items.length" style="margin-top: 1rem;">Cart is Empty</h4>
       <h4 x-show="$store.cart.items.length">Total : <span x-text="rupiah($store.cart.total)"></span> </h4>
-      
+
       <div class="form-container" x-show="$store.cart.items.length">
         <form action="" id="checkoutForm">
           <input type="hidden" name="items" x-model="JSON.stringify($store.cart.items)">
@@ -321,7 +320,7 @@
   </script>
 
   <!-- My Javascript -->
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
